@@ -1,0 +1,44 @@
+Chris Jansson
+CMP_SC 3330 Final Project
+May 6th, 2016
+
+
+
+1. Object oriented elements that you write the code for:
+	a. Classes
+	b. Subclasses
+	c. At least one abstract class and/or interface
+
+My project contains a main class, a secondary “model” class, two controllers, two scenes, and an interface.I also included the “Switchable” class from lecture. The “model” class inherits from the main class, and uses the “super” keyword multiple times to refer back to its parent.
+
+
+
+2. Code elements that you utilize:
+	a. One or more collection classes
+	b. Exception handling
+
+My project has exception handling everywhere, in the form of try-catch statements. As for collections, I used an ArrayList and an ObservableList, as well as ten sliders and ten labels, which are always synchronized. 
+
+
+
+3. The application must have a clearly defined model (as in the M in MVC)
+
+My project clearly defines these different pieces with a clear naming convention. The model class is called “EqualizerModel” and the two controllers are “FXMLEqualizerController” and “InfoController.” The view elements are obviously taken care of with Scene Builder and the .fxml files. 
+
+
+
+4. The UI must utilize multiple scenes and/or a scene where the contents of the scene graph are changed based on application state.
+
+My project has two scenes, the main equalizer and an “About” page. The “About” page can be reached by either of two ways, either through the menu bar or through the “About” button on the bottom right. The main equalizer window can be brought back by clicking the “Back” button on the “About” page. 
+
+
+
+5. There must be a way to access “About” information that includes information about you and the application.
+
+See #4 
+
+
+
+6. The application must save data and load data. The target for saving/loading data can be files, a network service, and/or a database.
+
+For this requirement, I designed the “Presets” tab in the menu bar. When the user finds an EQ setting they want to save, simply click “Save.” The program creates a file and writes the current value of each slider. The user can save this file wherever they would like. When “Load” is selected, the user can open a previous preset and the equalizer will revert to those settings. Several ready-made EQ presets have been provided in the project folder.

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="280.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cgj6hbequalizer.FXMLEqualizerController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Presets">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleLoad" text="Load" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" layoutY="15.0" prefHeight="258.0" prefWidth="1000.0">
+         <children>
+            <Slider fx:id="firstSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="25.0" />
+            <Slider fx:id="secondSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="125.0" />
+            <Slider fx:id="thirdSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="225.0" />
+            <Slider fx:id="fourthSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="325.0" />
+            <Slider fx:id="fifthSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="425.0" />
+            <Slider fx:id="sixthSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="525.0" />
+            <Slider fx:id="seventhSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="625.0" />
+            <Slider fx:id="eighthSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="725.0" />
+            <Slider fx:id="ninthSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="825.0" />
+            <Slider fx:id="tenthSlider" blockIncrement="3.0" layoutY="15.0" majorTickUnit="3.0" max="12.0" min="-12.0" minorTickCount="0" onMouseReleased="#handleSliderReleased" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="925.0" />
+            <Label layoutX="27.0" layoutY="161.0" text="32 Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="25.0" />
+            <Label fx:id="firstLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="25.0" />
+            <Label text="64 Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="125.0" />
+            <Label fx:id="secondLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="125.0" />
+            <Label text="125 Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="225.0" />
+            <Label fx:id="thirdLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="225.0" />
+            <Label text="250 Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="325.0" />
+            <Label fx:id="fourthLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="325.0" />
+            <Label text="500 Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="425.0" />
+            <Label fx:id="fifthLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="425.0" />
+            <Label text="1k Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="525.0" />
+            <Label fx:id="sixthLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="525.0" />
+            <Label text="2k Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="625.0" />
+            <Label fx:id="seventhLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="625.0" />
+            <Label text="4k Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="725.0" />
+            <Label fx:id="eighthLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="725.0" />
+            <Label text="8k Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="825.0" />
+            <Label fx:id="ninthLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="825.0" />
+            <Label text="16k Hz" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="925.0" />
+            <Label fx:id="tenthLabel" text="0.0 dB" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="925.0" />
+            <Button layoutX="12.0" layoutY="170.0" maxHeight="25.0" maxWidth="60.0" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#handlePlay" prefHeight="25.0" prefWidth="60.0" text="Play" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" />
+            <Button layoutX="155.0" layoutY="170.0" maxHeight="25.0" maxWidth="60.0" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#handlePause" prefHeight="25.0" prefWidth="60.0" text="Pause" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="100.0" />
+            <Button layoutX="296.0" layoutY="170.0" maxHeight="25.0" maxWidth="60.0" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleStop" prefHeight="25.0" prefWidth="60.0" text="Stop" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="175.0" />
+            <Button maxHeight="25.0" maxWidth="60.0" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleAbout" prefHeight="25.0" prefWidth="60.0" text="About" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+            <ToggleButton layoutX="674.0" layoutY="203.0" maxHeight="25.0" minHeight="25.0" mnemonicParsing="false" onAction="#handlePowerButton" prefHeight="25.0" text="Bypass" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="250.0" />
+         </children></AnchorPane>
+   </children>
+</VBox>

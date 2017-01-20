@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cgj6hbequalizer.InfoController">
+   <children>
+      <TextArea editable="false" layoutX="68.0" layoutY="-1.0" prefHeight="65.0" prefWidth="200.0" text="Author: Chris Jansson&#10;Pawprint: CGJ6HB&#10;Student ID: 12399710" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0" />
+      <Label layoutX="349.0" layoutY="37.0" text="Cgj6hb Equalizer" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" prefHeight="65.0" prefWidth="200.0" text="Instructor: Dale Musser&#10;Course: CMP_SC 3330&#10;SS 2016" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0" />
+      <TextArea editable="false" layoutX="52.0" layoutY="11.0" prefHeight="100.0" prefWidth="900.0" text="This equalizer allows the user to manipulate the gain of ten different bands across the audio spectrum. Open any audio file from the File menu and use the buttons to control playback. The bypass feature allows the user to hear a flat EQ without losing their current settings.&#10;&#10;The user can also experiment with presets by using the Presets menu. This allows the user to save and load EQ settings. Try saving an EQ setting, closing the program, and loading it the next time!" wrapText="true" AnchorPane.bottomAnchor="75.0" />
+      <Button layoutY="22.0" maxHeight="25.0" maxWidth="60.0" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="60.0" text="Back" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+   </children>
+</AnchorPane>
